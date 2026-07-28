@@ -1,0 +1,21 @@
+{
+  "name": "livepoll",
+  "version": "1.0.0",
+  "description": "livepoll",
+  "main": "index.js",
+  "scripts": {
+
+"start":"concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"npm start --prefix server",
+    "client":"npm start --prefix client",
+     "build": "npm run build --prefix client",
+    "start:prod": "npm run build && npm start --prefix server",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "author": "vishal lodhi",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
