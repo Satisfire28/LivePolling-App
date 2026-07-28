@@ -45,12 +45,16 @@ git clone <repo-url>
 cd Real-Time-Polling
 ```
 
-### 2. Set up the server
-
-```bash
-cd server
-npm install
+Available Scripts
+From the root directory:
 ```
+npm start — start both frontend and backend
+npm run server — start the backend only
+npm run client — start the frontend only
+npm run build — build the React client
+npm run start:prod — build the client and start the backend in production mode
+npm run install-all — install dependencies for the root, server, and client ```
+
 
 Create a `.env` file inside `server/`:
 
